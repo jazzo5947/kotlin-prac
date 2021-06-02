@@ -1,6 +1,7 @@
 package com.kotlin.ktdemo
 
 import com.kotlin.ktdemo.Util.Unzip
+import com.kotlin.ktdemo.Util.ZipExampleKt
 import com.kotlin.ktdemo.Util.compJava
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -18,14 +19,19 @@ fun main(args: Array<String>) {
 
     val zipfile = listOf(File("C:\\Users\\PARKSUNGHO\\Documents\\ziptest\\test.txt"),
                          File("C:\\Users\\PARKSUNGHO\\Documents\\ziptest\\test2.txt"))
-    //val targetDir = File("C:\\Users\\planit\\ktDemo\\ziptest")
+
+    val zipfolder = listOf(File("C:\\zipzip\\testfolder"))
 
     //val zipfile = "C:\\Users\\planit\\ktDemo\\ziptest\\test.txt"
     val targetDir = "C:\\Users\\PARKSUNGHO\\Documents\\ziptest"
+    val zipResName = "\\zipResult.zip"
 
     //ZipUtil.unpack(zipfile, targetDir)
 
     val zipUtil = Unzip()
     //zipUtil.unZip("C:\\Users\\PARKSUNGHO\\Documents\\ziptest\\testdirindir.zip", "C:\\Users\\PARKSUNGHO\\Documents\\ziptest")
-    zipUtil.zip(zipfile, targetDir)
+    zipUtil.zip(zipfile, targetDir+zipResName)
+
+    val zipExkt = ZipExampleKt()
+    //zipExkt.compress(targetDir, "zipzipzip.zip")
 }
