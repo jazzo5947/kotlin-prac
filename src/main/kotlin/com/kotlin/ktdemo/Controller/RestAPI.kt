@@ -60,10 +60,10 @@ class RestAPI {
                     System.out.println("error!");
                     System.out.println(e.toString());
                 }else -> {
-                result.put("statusCode", "999");
-                result.put("body", "excpetion오류");
-                System.out.println(e.toString());
-            }
+                    result.put("statusCode", "999");
+                    result.put("body", "excpetion오류");
+                    System.out.println(e.toString());
+                }
             }
         }
 

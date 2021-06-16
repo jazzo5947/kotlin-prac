@@ -40,7 +40,6 @@ dependencies {
 
     implementation("org.zeroturnaround:zt-zip:1.6")
     implementation("org.apache.commons:commons-compress:1.18")
-
 }
 
 tasks.withType<KotlinCompile> {
