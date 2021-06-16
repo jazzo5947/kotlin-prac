@@ -16,21 +16,14 @@ fun main(args: Array<String>) {
     runApplication<KtDemoApplication>(*args)
 
     println("let's get some info from open API")
+    println("let's get some info from open API")
+    println("third commit test")
 
-    val zipfile = listOf(File("C:\\Users\\PARKSUNGHO\\Documents\\ziptest\\test.txt"),
-                         File("C:\\Users\\PARKSUNGHO\\Documents\\ziptest\\test2.txt"))
-
-    val zipfolder = listOf(File("C:\\zipzip\\testfolder"))
-
-    //val zipfile = "C:\\Users\\planit\\ktDemo\\ziptest\\test.txt"
-    val targetDir = "C:\\Users\\PARKSUNGHO\\Documents\\ziptest"
-    val zipResName = "\\zipResult.zip"
-
-    //ZipUtil.unpack(zipfile, targetDir)
+    val zipfile = listOf(File("C:\\Users\\PARKSUNGHO\\Documents\\ziptest\\zipzipTest"))
+    //val zipfile = listOf(File("C:\\Users\\PARKSUNGHO\\Documents\\ziptest\\test.txt"), File("C:\\Users\\PARKSUNGHO\\Documents\\ziptest\\test2.txt"))
 
     val zipUtil = Unzip()
-    //zipUtil.unZip("C:\\Users\\PARKSUNGHO\\Documents\\ziptest\\testdirindir.zip", "C:\\Users\\PARKSUNGHO\\Documents\\ziptest")
-    zipUtil.zip(zipfile, targetDir+zipResName)
+    zipUtil.unZip4("C:\\Users\\planit\\HyperEx\\LT_CRE_ADM_CD.zip", "C:\\Users\\planit\\HyperEx\\ziptest")
 
     val zipExkt = ZipExampleKt()
     //zipExkt.compress(targetDir, "zipzipzip.zip")
